@@ -11,7 +11,7 @@ class Sample : JavaPlugin() {
         events {
             onChat {
                 sender().openInventory(
-                        inventory("test", InventorySize.SLOT9) {
+                    inventory("test", InventorySize.SLOT9) {
                         slot(0, ItemStack(Material.DIAMOND).apply {
                                 editMeta {
                                     it.displayName(Component.text("다이아 아니고 금임"))
